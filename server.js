@@ -4,8 +4,12 @@ const cors = require('cors');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const connectDB = require('./database/db');
-const userRoute = require('./routes/users')
-const authRoute = require('./routes/auth')
+const userRoute = require("./routes/users");
+const authRoute = require("./routes/auth");
+const postRoute = require("./routes/posts");
+
+
+
 
 const bodyParser = require('body-parser')
 app.use(bodyParser.json());
@@ -18,8 +22,9 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use(helmet())
 
-app.use('/api/user', userRoute);
-app.use('/api/auth', authRoute);
+app.use("/api/auth", authRoute);
+app.use("/api/users", userRoute);
+app.use("/api/posts", postRoute);
 
 
 app.get('/', (req,res) => {
