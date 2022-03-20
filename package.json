@@ -4,8 +4,25 @@
   "description": "nearby locations",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "start-server": "nodemon server.js --ignore './client/'",
+    "start-client": "npm start --prefix client",
+    "dev": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shakky",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "minimist": "^1.2.5",
+    "morgan": "^1.10.0"
+  }
 }
