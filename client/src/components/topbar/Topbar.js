@@ -10,7 +10,7 @@ const Topbar = () => {
         </div>
         <div className="topBarCenter">
             <div className="searchBar">
-              <Search/>
+              <Search className='searchIcon' />
               <input placeholder='Find a Place Nearby' className="searchInput" />
             </div>
         </div>
@@ -20,19 +20,19 @@ const Topbar = () => {
               <span className="topBarLink">TimeLine</span>
             </div>
             <div className="topBarIcons">
-              <div className="topBarItem">
+              <div className="topBarIconItem">
                 <Person/>
                 <span className="topBarIconBaadge">
                   1
                 </span>
               </div>
-              <div className="topBarItem">
+              <div className="topBarIconItem">
                 <Chat/>
                 <span className="topBarIconBaadge">
                   2
                 </span>
               </div>
-              <div className="topBarItem">
+              <div className="topBarIconItem">
                 <Notifications/>
                 <span className="topBarIconBaadge">
                   1
