@@ -1,9 +1,9 @@
 import React from 'react'
-import "./Righbar.css"
+import "./Rightbar.css"
 
 const Rightbar = () => {
   return (
-    <div>Rightbar</div>
+    <div className='rightbar'>Rightbar</div>
   )
 }
 
