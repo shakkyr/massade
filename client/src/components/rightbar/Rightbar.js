@@ -3,10 +3,11 @@ import "./Rightbar.css"
 import { Users } from '../../dummyData'
 import Online from '../online/Online'
 
-const Rightbar = () => {
-  return (
-    <div className='rightbar'>
-        <div className="rightBarWrapper">
+const Rightbar = ({profile}) => {
+
+  const HomeRightBar = () => {
+    return (
+       <>
           <div className="birthDayContainer">
             <img src="/assets/gift.png" alt="" className='birthDayImg'/>
             <span className="birthDayText"><b>Pola Foster</b> and <b>3 other friends </b> have a birth day</span>
@@ -20,6 +21,28 @@ const Rightbar = () => {
             
 
           </ul>
+       </>
+      )
+  }
+
+  const ProfileRightBar = () => {
+    return (
+      <>
+        <h4 className="rightBarTitle">User Information</h4>
+        <div className="rightBarInfo">
+          <div className="rightBarInfoItem">
+            <span className="rightBarInfoKey">Town: </span>
+            <span className="rightBarInfoValue"> Massade</span>
+          </div>
+        </div>
+      </>
+      )
+  }
+
+  return (
+    <div className='rightbar'>
+        <div className="rightBarWrapper">
+            <ProfileRightBar />
         </div>
     </div>
   )
