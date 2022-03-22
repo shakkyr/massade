@@ -51,6 +51,18 @@ const Sidebar = () => {
             <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
             <span className="sidebarFriendName">Talat</span>
           </li>
+          <li className="sidebarFriend">
+            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
+            <span className="sidebarFriendName">Talat</span>
+          </li>
+          <li className="sidebarFriend">
+            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
+            <span className="sidebarFriendName">Talat</span>
+          </li>
+          <li className="sidebarFriend">
+            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
+            <span className="sidebarFriendName">Talat</span>
+          </li>
         </ul>
       </div>
     </div>
