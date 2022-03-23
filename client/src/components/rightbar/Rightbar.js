@@ -34,6 +34,41 @@ const Rightbar = ({profile}) => {
             <span className="rightBarInfoKey">Town: </span>
             <span className="rightBarInfoValue"> Massade</span>
           </div>
+          <div className="rightBarInfoItem">
+            <span className="rightBarInfoKey">From: </span>
+            <span className="rightBarInfoValue"> Massade</span>
+          </div>
+          <div className="rightBarInfoItem">
+            <span className="rightBarInfoKey">Relationship: </span>
+            <span className="rightBarInfoValue"> Married</span>
+          </div>
+        </div>
+        <h4 className="rightBarTilte">User Friends</h4>
+        <div className="rightBarFollowings">
+          <div className="rightBarFollowing">
+            <img src="assets/person/1.jpeg" alt="" className="rightBarFollowingImg" />
+            <span className="rightBarFollowingName"> Majd Rada</span>
+          </div>
+          <div className="rightBarFollowing">
+            <img src="assets/person/2.jpeg" alt="" className="rightBarFollowingImg" />
+            <span className="rightBarFollowingName"> Wafi Rada</span>
+          </div>
+          <div className="rightBarFollowing">
+            <img src="assets/person/3.jpeg" alt="" className="rightBarFollowingImg" />
+            <span className="rightBarFollowingName"> Talat</span>
+          </div>
+          <div className="rightBarFollowing">
+            <img src="assets/person/4.jpeg" alt="" className="rightBarFollowingImg" />
+            <span className="rightBarFollowingName"> Zahi</span>
+          </div>
+          <div className="rightBarFollowing">
+            <img src="assets/person/5.jpeg" alt="" className="rightBarFollowingImg" />
+            <span className="rightBarFollowingName"> Shihab</span>
+          </div>
+          <div className="rightBarFollowing">
+            <img src="assets/person/6.jpeg" alt="" className="rightBarFollowingImg" />
+            <span className="rightBarFollowingName"> wael</span>
+          </div>
         </div>
       </>
       )
